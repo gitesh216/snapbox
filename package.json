@@ -6,15 +6,30 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate": "tsx ./lib/db/migrate.ts",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.23.0",
+    "@heroui/button": "^2.2.22",
+    "@heroui/card": "^2.2.21",
+    "@heroui/divider": "^2.2.15",
+    "@heroui/input": "^2.4.22",
+    "@heroui/system": "^2.4.18",
+    "@heroui/theme": "^2.4.17",
+    "@hookform/resolvers": "^5.1.1",
     "@neondatabase/serverless": "^1.0.1",
     "dotenv": "^16.5.0",
     "drizzle-orm": "^0.44.2",
+    "framer-motion": "^12.19.1",
+    "lucide-react": "^0.522.0",
     "next": "15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.58.1",
     "zod": "^3.25.67"
   },
   "devDependencies": {
