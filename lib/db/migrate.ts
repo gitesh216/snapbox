@@ -11,7 +11,7 @@ import { neon } from "@neondatabase/serverless";
 import * as dotenv from "dotenv";
 
 // Load environment variables from .env.local
-dotenv.config({ path: ".env.local" });
+dotenv.config({ path: ".env" });
 
 // Validate environment variables
 if (!process.env.DATABASE_URL) {
